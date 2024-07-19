@@ -64,6 +64,7 @@ nav a:hover{
 
 #home #icones{
     margin: auto;
+    margin-left: 30px;
 }
 
 
@@ -136,12 +137,12 @@ nav a:hover{
 
 #projetos #imagens-projetos img{
     border-radius: 15px;
+    width: 400px;
     transition: 0.5s;
 }
 
 #projetos #imagens-projetos img:hover{
     transition: 0.5s;
-    width: 101%;
     opacity: 0.9;
 }
 
@@ -165,4 +166,58 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media(max-width:1050px){
+    /*Home*/
+    #home h2{
+        font-size: 1.6em;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+    }
+
+    /*SOBRE*/
+    #sobre{
+        flex-direction: column;
+    }
+
+    #sobre #sobre-texto{
+        margin-top: 100px;
+    }
+
+    #sobre img{
+        width: 350px;
+        margin-bottom: 100px;
+    }
+
+    /*Projetos*/
+    #projetos h2{
+        font-size: 1.8em;
+    }
+
+    #projetos p{
+        font-size: 1.2em;
+        margin-bottom: -120px;
+    }
+
+    #projetos #imagens-projetos img{
+        width: 300px;
+    }
+
+    /*Footer*/
+    footer{
+        font-size: 1em;
+    }
+
+}
+
+
+@media (max-width: 600px){ 
+    #projetos #imagens-projetos img{
+        width: 180px;
+    }
 }
